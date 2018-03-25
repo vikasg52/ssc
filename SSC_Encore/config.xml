@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="POC_RestAssured" allow-return-values="true">
+<test thread-count="5" name="Fectch_Access_Token">
+  <parameter name="URL" value="https://mcmpay-dev.mcmcg.com/mcmpay-admin-console"></parameter>
+    <classes>
+    <class name="ecnore.atm.test.Login_Authentication"/>
+    </classes>
+ </test> <!-- Fectch_Access Token -->
+
+<test thread-count="4" name="Validate Response Time">
+<parameter name="URL" value=""></parameter>
+    <classes>
+    <class name="ecnore.atm.test.Response_Tiime_Validation"/>
+    </classes>
+</test> <!-- Fectch_Active_Payment_cards -->
+  
+<!--  
+<test thread-count="5" name="Fectch_Active_Payment_List">
+  <parameter name="URL" value=""></parameter>
+    <classes>
+        <class name="ecnore.atm.test.Test_Fetch_ActivePayments"/>
+    </classes>
+</test>   --> 
+  
+  <test thread-count="5" name="Fectch_Account Details">
+  <parameter name="URL" value=""></parameter>
+    <classes>
+            <class name="ecnore.atm.test.Test_Fetch_AccountDetails"/>
+    </classes>
+ </test> <!-- Fectch_Active_Payment_cards -->
+  
+  <test thread-count="5" name="Retrieve Email Template">
+  <parameter name="URL" value="https://mcmpay-dev.mcmcg.com/mcmpay-admin-console"></parameter>
+    <classes>
+            <class name="ecnore.atm.test.Test_Retrieve_Email_Template"/>
+    </classes>
+  </test> <!-- Fectch_Active_Payment_cards -->
+ </suite> <!-- POC_RestAssured_ActivePayment_List -->
